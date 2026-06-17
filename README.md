@@ -1,2 +1,2 @@
 # HobbyHook
-An interactive React application that recommends creative, physical, analytical, and social activities based on user preferences and available time, encouraging healthier alternatives to excessive screen usage.
+HobbyHook is a React-based web application designed to help people break out of endless scrolling by recommending engaging activities tailored to their interests and free time. Users can select their preferred activity categories and available time, and the app generates personalized hobby suggestions to inspire productive and enjoyable offline experiences.
