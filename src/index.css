@@ -1,184 +1,136 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
-
-body {
-  min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    #667eea 0%,
-    #764ba2 25%,
-    #f093fb 60%,
-    #f5576c 100%
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 25%,#f093fb 60%,#f5576c 100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
 }
-
-/* Main Container */
-.container {
-  width: min(700px, 100%);
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(18px);
-  border-radius: 30px;
-  padding: 40px;
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.18),
-    0 8px 20px rgba(255, 255, 255, 0.15);
-  color: white;
+.container{
+    width:min(700px,100%);
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 20px 40px rgba(0, 0, 0, 0.18), 0 8px 20px rgba(255, 255, 255, 0.15);
+    color:white;
 }
-
-/* Heading */
-.container h1 {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 2.3rem;
-  font-weight: 700;
+.container h1{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:2.3rem;
+    font-weight:700;
 }
-
-.container p {
-  text-align: center;
-  margin-bottom: 35px;
-  opacity: 0.9;
+.container p{
+    text-align:center;
+    margin-bottom:35px;
+    opacity:0.9;
 }
-
-/* Section */
-.section {
-  margin-bottom: 30px;
+.section{
+    margin-bottom:30px;
 }
-
-.section label:first-child {
-  display: block;
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 15px;
+.section label:first-child{
+    display:block;
+    font-size:1.05rem;
+    font-weight:600;
+    margin-bottom:15px;
 }
-
-/* Number Input */
-input[type="number"] {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 14px 18px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
-  color: #444;
-  margin-top: 10px;
+input[type="number"]{
+    width:100%;
+    border:none;
+    outline:none;
+    padding:14px 18px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.9);
+    font-size:1rem;
+    color:#444;
+    margin-top:10px;
 }
-
-/* Checkbox & Radio Cards */
-.option {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 18px;
-  margin-bottom: 12px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.14);
-  transition: all 0.3s ease;
-  cursor: pointer;
+.option{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 18px;
+    margin-bottom:12px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.14);
+    transition:all 0.3s ease;
+    cursor:pointer;
 }
-
-.option:hover {
-  transform: translateX(8px);
-  background: rgba(255, 255, 255, 0.22);
+.option:hover{
+    transform:translateX(8px);
+    background:rgba(255,255,255,0.22);
 }
-
 input[type="checkbox"],
-input[type="radio"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #ffdf6c;
-  cursor: pointer;
+input[type="radio"]{
+    width:18px;
+    height:18px;
+    accent-color:#ffdf6c;
+    cursor:pointer;
 }
-
-/* Button */
-button {
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-  padding: 16px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    #ff9a9e,
-    #fad0c4,
-    #fbc2eb
-  );
-  color: #5a2569;
-  transition: all 0.35s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+button{
+    width:100%;
+    border:none;
+    border-radius:20px;
+    padding:16px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    background:linear-gradient(90deg,#ff9a9e,#fad0c4,#fbc2eb);
+    color:#5a2569;
+    transition:all 0.35s ease;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
+button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(0, 0, 0, 0.22);
 }
-
-button:active {
-  transform: scale(0.98);
+button:active{
+    transform:scale(0.98);
 }
-
-/* Result Card */
-.result-box {
-  margin-top: 35px;
-  padding: 30px;
-  border-radius: 25px;
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.25),
-    rgba(255,255,255,0.1)
-  );
-  text-align: center;
-  animation: popUp 0.6s ease;
-  border: 1px solid rgba(255,255,255,0.2);
+.result-box{
+    margin-top:35px;
+    padding:30px;
+    border-radius:25px;
+    background:linear-gradient(135deg,rgba(255,255,255,0.25),rgba(255,255,255,0.1));
+    text-align:center;
+    animation:popUp 0.6s ease;
+    border:1px solid rgba(255,255,255,0.2);
 }
-
-.result-box h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.result-box h1{
+    font-size:1.5rem;
+    margin-bottom:20px;
 }
-
-.result-box h2 {
-  font-size: 1.15rem;
-  line-height: 1.7;
-  font-weight: 500;
+.result-box h2{
+    font-size:1.15rem;
+    line-height:1.7;
+    font-weight:500;
 }
-
-/* Pop Animation */
-@keyframes popUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.92);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+@keyframes popUp{
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(0.92);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
 }
-
-/* Mobile */
-@media (max-width: 700px) {
-  .container {
-    padding: 28px 22px;
-  }
-
-  .container h1 {
-    font-size: 1.8rem;
-  }
-
-  .result-box h2 {
-    font-size: 1rem;
-  }
+@media (max-width: 700px){
+    .container{
+        padding:28px 22px;
+    }
+    .container h1{
+        font-size:1.8rem;
+    }
+    .result-box h2{
+        font-size:1rem;
+    }
 }
